@@ -1,0 +1,133 @@
+{
+    "info": {
+        "_postman_id": "702b1ea0-5676-41a6-a37f-6538ee194bbc",
+        "name": "products",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "get all products",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/products",
+                    "path": [
+                        "products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "products not fount",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/products/20",
+                    "path": [
+                        "products",
+                        "20"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "products found",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/products/2",
+                    "path": [
+                        "products",
+                        "2"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "Succes",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/products",
+                    "path": [
+                        "products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"csoki\",\n  \"price\": 299.99\n}"
+                }
+            }
+        },
+        {
+            "name": "törlés",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:3000/products/1",
+                    "path": [
+                        "products",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "letrehoz",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/products",
+                    "path": [
+                        "products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"id\": 1,\n  \"name\": \"csoki\",\n  \"price\": 299.99\n}"
+                }
+            }
+        }
+    ]
+}
